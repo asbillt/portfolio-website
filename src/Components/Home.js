@@ -19,7 +19,7 @@ function Home() {
         <Col className="d-flex justify-content-center py-4">
           <Button
             variant="light"
-            className="d-flex fs-5 text-white bg-transparent"
+            className="homebtn border-1 d-flex fs-5 text-white bg-transparent"
           >
             <span className="px-2 py-1">Learn About Me</span>
             <CgArrowRight className="align-self-center" />
