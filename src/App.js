@@ -1,27 +1,19 @@
 import "./App.css";
-import Header from "./Components/Header";
+import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Social from "./Components/Social";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/">
-          <Header />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/social">
-          <Social />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/projects" element={<Projects />} />
+        <Route exact path="/social" element={<Social />} />
+      </Routes>
     </Router>
   );
 }
