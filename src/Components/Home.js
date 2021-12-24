@@ -3,9 +3,11 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { useNavigate } from "react-router-dom";
 import { CgArrowRight } from "react-icons/cg";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <Container
       fluid
@@ -20,6 +22,7 @@ function Home() {
           <Button
             variant="light"
             className="homebtn border-1 d-flex fs-5 text-white bg-transparent"
+            onClick={() => navigate("/about")}
           >
             <span className="px-2 py-1">Learn About Me</span>
             <CgArrowRight className="align-self-center" />
