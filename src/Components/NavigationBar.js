@@ -14,30 +14,30 @@ import { Link } from "react-router-dom";
 function NavigationBar() {
   return (
     <Navbar expand="lg" className="px-5 py-3 bg-light" fixed="top">
-      <NavbarToggle aria-controls="basic-navbar-nav"></NavbarToggle>
+      <NavbarToggle
+        aria-controls="basic-navbar-nav"
+        className=""
+      ></NavbarToggle>
       <NavbarCollapse id="basic-navbar-nav" className="justify-content-start">
         <Nav className="px-lg-5 fs-5">
-          <Link
-            to="/"
-            className="pe-lg-5 p-lg-2 text-primary text-decoration-none"
-          >
+          <Link to="/" className="px-lg-4 py-lg-1 py-1 text-decoration-none">
             Home
           </Link>
           <Link
             to="/about"
-            className="pe-lg-5 p-lg-2 text-primary text-decoration-none"
+            className="px-lg-4 py-lg-1 py-1 text-decoration-none"
           >
             About
           </Link>
           <Link
             to="/projects"
-            className="pe-lg-5 p-lg-2 text-primary text-decoration-none"
+            className="px-lg-4 py-lg-1 py-1 text-decoration-none"
           >
             Projects
           </Link>
           <Link
             to="/social"
-            className="p-lg-2 text-primary text-decoration-none"
+            className="px-lg-4 py-lg-1 py-1 text-decoration-none"
           >
             Social
           </Link>
