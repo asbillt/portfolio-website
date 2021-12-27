@@ -24,11 +24,11 @@ function About() {
   return (
     <div>
       <NavigationBar />
-      <Container className="vh-100 d-flex justify-content-center text-white mt-5 pt-5">
-        <div className="px-5 mx-5">
-          <Row className="">
-            <div className="pb-4">
-              <h2 className="pb-4">About Me</h2>
+      <Container className="vh-100 d-flex text-white justify-content-center align-items-center flex-column">
+        <Row className="pb-5">
+          <div className="d-flex justify-content-center">
+            <Col className="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
+              <h1 className="text-center pb-2">About Me</h1>
               <p className="fs-5">
                 Hello! My name is David and I enjoy creating apps that live on
                 the internet. My interest in{" "}
@@ -43,13 +43,20 @@ function About() {
                 </span>{" "}
                 that are accessible and inclusive digital experiences.
               </p>
-            </div>
-            <div className="pt-4">
-              <h2 className="pb-4">
-                Programming languages, technologies, and tools:
-              </h2>
-              <Col>
-                <ol className="ps-3">
+            </Col>
+          </div>
+        </Row>
+        <Row className="">
+          <div className="">
+            <Row>
+              <h1 className="pb-2 text-center">Languages and tools:</h1>
+              <p className="fs-5 text-center">
+                Here are some of the technologies I am working with.
+              </p>
+            </Row>
+            <Row className="fs-5 d-flex">
+              <Col className="d-flex justify-content-center">
+                <ul className="">
                   <li>
                     HTML <DiHtml5 />
                   </li>
@@ -68,13 +75,18 @@ function About() {
                   <li>
                     Node.js <SiNodedotjs />
                   </li>
+                  <li>SQL</li>
+                </ul>
+              </Col>
+              <Col className="d-flex justify-content-center">
+                <ul>
                   <li>
                     Bootstrap <SiBootstrap />
                   </li>
                   <li>
                     Sass <DiSass />
                   </li>
-                  <li>SQL</li>
+
                   <li>
                     Visual Studio <DiVisualstudio />
                   </li>
@@ -87,13 +99,13 @@ function About() {
                   <li>
                     NPM <DiNpm />
                   </li>
-                  <li>Object-Oriented Programming</li>
+                  <li>OOP</li>
                   <li>Rest APIs</li>
-                </ol>
+                </ul>
               </Col>
-            </div>
-          </Row>
-        </div>
+            </Row>
+          </div>
+        </Row>
       </Container>
     </div>
   );
