@@ -1,7 +1,12 @@
 import React from "react";
+import NavigationBar from "./NavigationBar";
 
 function Projects() {
-  return <p>TBD</p>;
+  return (
+    <div>
+      <NavigationBar />
+    </div>
+  );
 }
 
 export default Projects;
