@@ -20,8 +20,8 @@ function Home() {
         </h1>
         <Col className="d-flex justify-content-center py-4">
           <Button
-            variant="light"
-            className="homebtn border-1 d-flex fs-5 text-white bg-transparent"
+            variant="warning"
+            className="homebtn border-1 d-flex fs-5 text-warning bg-transparent"
             onClick={() => navigate("/about")}
           >
             <span className="px-2 py-1">Learn About Me</span>
