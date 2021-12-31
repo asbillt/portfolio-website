@@ -25,7 +25,7 @@ function About() {
   return (
     <div>
       <NavigationBar />
-      <Container className="vh-100 d-flex text-white justify-content-center align-items-center flex-column">
+      <Container className="vh-100 d-flex text-white justify-content-center align-items-center flex-column bg-black bg-opacity-25">
         <Row className="pb-5">
           <div className="d-flex justify-content-center">
             <Col className="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
