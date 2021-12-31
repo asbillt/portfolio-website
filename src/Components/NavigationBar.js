@@ -20,36 +20,13 @@ import {
 function NavigationBar() {
   return (
     <Navbar expand="md" className="px-5 py-3 bg-light" fixed="top">
-      <NavbarToggle
-        aria-controls="basic-navbar-nav"
-        className=""
-      ></NavbarToggle>
-      <NavbarCollapse id="basic-navbar-nav" className="justify-content-start">
-        <Nav className="px-md-5 fs-5">
-          <Link to="/" className="px-md-5 py-md-1 py-1 text-decoration-none">
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="px-md-5 py-md-1 py-1 text-decoration-none"
-          >
-            About
-          </Link>
-          <Link
-            to="/projects"
-            className="px-md-5 py-md-1 py-1 text-decoration-none"
-          >
-            Projects
-          </Link>
-        </Nav>
-      </NavbarCollapse>
       <div className="d-flex justify-content-center ">
         <a
           href="https://www.linkedin.com/in/davidasbill/"
           target="_blank"
           rel="noreferrer"
         >
-          <GrLinkedin size={30} className="me-3 me-lg-5" />
+          <GrLinkedin size={30} className="ms-2 ms-lg-5 me-3 me-lg-5" />
         </a>
         <a href="https://github.com/asbillt" target="_blank" rel="noreferrer">
           <GrGithub size={30} className="me-3 me-lg-5" />
@@ -68,6 +45,32 @@ function NavigationBar() {
           <GrTwitter size={30} className="me-lg-5" />
         </a>
       </div>
+      <NavbarToggle
+        aria-controls="basic-navbar-nav"
+        className=""
+      ></NavbarToggle>
+      <NavbarCollapse id="basic-navbar-nav" className="justify-content-end">
+        <Nav className="px-md-5 fs-5">
+          <Link
+            to="/"
+            className="px-md-5 py-md-1 py-1 pt-4 text-decoration-none"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            className="px-md-5 py-md-1 py-1 text-decoration-none"
+          >
+            About
+          </Link>
+          <Link
+            to="/projects"
+            className="px-md-5 py-md-1 py-1 text-decoration-none"
+          >
+            Projects
+          </Link>
+        </Nav>
+      </NavbarCollapse>
     </Navbar>
   );
 }
