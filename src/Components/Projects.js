@@ -3,7 +3,7 @@ import NavigationBar from "./NavigationBar";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { Slide } from "@mui/material";
+import { Fade } from "@mui/material";
 
 function Projects() {
   return (
@@ -11,105 +11,248 @@ function Projects() {
       <NavigationBar />
       <Container className="vh-100 text-white" style={{ paddingTop: "14vh" }}>
         <Row className="">
-          <Slide in={true} direction="right" easing="ease-out" timeout={750}>
+          <Fade in={true} direction="right" easing="ease-out" timeout={500}>
             <h1 className="text-center">Some apps I've built:</h1>
-          </Slide>
+          </Fade>
         </Row>
-        <Row className="d-flex flex-column gy-4 p-5">
-          <Slide
+        <Row className="d-flex p-4 g-4">
+          <Fade
             in={true}
             direction="right"
             easing="ease-out"
-            timeout={750}
+            timeout={500}
+            style={{ transitionDelay: 250 }}
+          >
+            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+              <div className="d-flex flex-column">
+                <Col>
+                  <h4>
+                    Source Code:
+                    <a
+                      href="https://github.com/asbillt/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Blog
+                    </a>
+                  </h4>
+                  <h4>
+                    Hosted App:
+                    <a
+                      href="https://github.com/asbillt/blog"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Blog
+                    </a>
+                  </h4>
+                  <div className="text-center p-4">
+                    <h4>Blog</h4>
+                    <p>A personal blog built in React.js.</p>
+                  </div>
+                </Col>
+                <Col>
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>React.js</li>
+                    <li>JSON Server</li>
+                  </ul>
+                </Col>
+              </div>
+            </Col>
+          </Fade>
+          <Fade
+            in={true}
+            direction="right"
+            easing="ease-out"
+            timeout={500}
             style={{ transitionDelay: 500 }}
           >
-            <Col className="bg-black bg-opacity-25">
+            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
                     <a
-                      href="https://github.com/asbillt/blog"
+                      href="https://github.com/asbillt/portfolio-website"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-decoration-none"
+                      className="text-decoration-none text-warning ps-2"
                     >
-                      Blog
+                      Portfolio Website
                     </a>
                   </h4>
                   <h4>
                     Hosted App:
                     <a
-                      href="https://github.com/asbillt/blog"
+                      href="https://github.com/asbillt/portfolio-website"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-decoration-none"
+                      className="text-decoration-none text-warning ps-2"
                     >
-                      Blog
+                      Portfolio Website
                     </a>
                   </h4>
-                  <div className="text-center">
-                    <h4>Blog</h4>
-                    <p>A personal blog built in React.js.</p>
+                  <div className="text-center p-4">
+                    <h4>Portfolio Website</h4>
+                    <p>A personal portofolio website built in React.js.</p>
                   </div>
                 </Col>
                 <Col>
                   <h5>Built with:</h5>
                   <ul>
                     <li>React.js</li>
-                    <li>JSON Server</li>
+                    <li>Material UI</li>
+                    <li>Bootstrap</li>
                   </ul>
                 </Col>
               </div>
             </Col>
-          </Slide>
-          <Slide
+          </Fade>
+          <Fade
             in={true}
             direction="right"
             easing="ease-out"
-            timeout={750}
-            style={{ transitionDelay: 1000 }}
+            timeout={500}
+            style={{ transitionDelay: 750 }}
           >
-            <Col className="bg-black bg-opacity-25">
+            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
                     <a
-                      href="https://github.com/asbillt/blog"
+                      href="https://github.com/asbillt/asbillt-website"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-decoration-none"
+                      className="text-decoration-none text-warning ps-2"
                     >
-                      Blog
+                      Asbillt Website
                     </a>
                   </h4>
                   <h4>
                     Hosted App:
                     <a
-                      href="https://github.com/asbillt/blog"
+                      href="https://asbillt.com/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-decoration-none"
+                      className="text-decoration-none text-warning ps-2"
                     >
-                      Blog
+                      Asbillt Website
                     </a>
                   </h4>
-                  <div className="text-center">
-                    <h4>Blog</h4>
-                    <p>A personal blog built in React.js.</p>
+                  <div className="text-center p-4">
+                    <h4>Portfolio Website</h4>
+                    <p>A personal portofolio website built in React.js.</p>
+                  </div>
+                </Col>
+                <Col>
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                  </ul>
+                </Col>
+              </div>
+            </Col>
+          </Fade>
+          <Fade
+            in={true}
+            direction="right"
+            easing="ease-out"
+            timeout={500}
+            style={{ transitionDelay: 1000 }}
+          >
+            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+              <div className="d-flex flex-column">
+                <Col>
+                  <h4>
+                    Source Code:
+                    <a
+                      href="https://github.com/asbillt/asbillt-website"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Tea Party Website
+                    </a>
+                  </h4>
+                  <h4>
+                    Hosted App:
+                    <a
+                      href="https://asbillt.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Tea Party Website
+                    </a>
+                  </h4>
+                  <div className="text-center p-4">
+                    <h4>Tea Party Website</h4>
+                    <p>A tea party website built in React.js.</p>
                   </div>
                 </Col>
                 <Col>
                   <h5>Built with:</h5>
                   <ul>
                     <li>React.js</li>
-                    <li>JSON Server</li>
+                    <li>Bootstrap</li>
                   </ul>
                 </Col>
               </div>
             </Col>
-          </Slide>
+          </Fade>
+          <Fade
+            in={true}
+            direction="right"
+            easing="ease-out"
+            timeout={500}
+            style={{ transitionDelay: 1250 }}
+          >
+            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+              <div className="d-flex flex-column">
+                <Col>
+                  <h4>
+                    Source Code:
+                    <a
+                      href="https://github.com/asbillt/javascript-color-flipper"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Color Flipper
+                    </a>
+                  </h4>
+                  <h4>
+                    Hosted App:
+                    <a
+                      href="https://asbillt.github.io/javascript-color-flipper/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-decoration-none text-warning ps-2"
+                    >
+                      Color Flipper
+                    </a>
+                  </h4>
+                  <div className="text-center p-4">
+                    <h4>Color Flipper</h4>
+                    <p>Color Flipper</p>
+                  </div>
+                </Col>
+                <Col>
+                  <h5>Built with:</h5>
+                  <ul>
+                    <li>JavaScript (ES6)</li>
+                    <li>CSS3</li>
+                    <li>HTML5</li>
+                  </ul>
+                </Col>
+              </div>
+            </Col>
+          </Fade>
         </Row>
       </Container>
     </div>
