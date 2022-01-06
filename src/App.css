@@ -1,7 +1,9 @@
+/* Home Component Styles*/
+
 /* Navigation Styles */
 
 .active {
-  color: #ff9800;
+  color: #ffc107;
 }
 
 .linkcolor {
@@ -9,5 +11,5 @@
 }
 
 .linkhover:hover {
-  color: #ff9800;
+  color: #ffc107;
 }
