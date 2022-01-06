@@ -14,7 +14,6 @@ import {
 } from "react-icons/di";
 import {
   SiJavascript,
-  SiNodedotjs,
   SiBootstrap,
   SiGithub,
   SiTypescript,
@@ -88,13 +87,13 @@ function About() {
                 <Col className="d-flex justify-content-center">
                   <ul className="">
                     <li>
-                      HTML <DiHtml5 />
+                      HTML5 <DiHtml5 />
                     </li>
                     <li>
-                      CSS <DiCss3 />
+                      CSS3 <DiCss3 />
                     </li>
                     <li>
-                      JavaScript <SiJavascript />
+                      JavaScript (ES6) <SiJavascript />
                     </li>
                     <li>
                       Typescript <SiTypescript />
@@ -103,20 +102,15 @@ function About() {
                       React.js <DiReact />
                     </li>
                     <li>
-                      Node.js <SiNodedotjs />
-                    </li>
-                    <li>SQL</li>
-                  </ul>
-                </Col>
-                <Col className="d-flex justify-content-center">
-                  <ul>
-                    <li>
                       Bootstrap <SiBootstrap />
                     </li>
                     <li>
                       Sass <DiSass />
                     </li>
-
+                  </ul>
+                </Col>
+                <Col className="d-flex justify-content-center">
+                  <ul>
                     <li>
                       Visual Studio <DiVisualstudio />
                     </li>
