@@ -3,7 +3,7 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   GrLinkedin,
   GrGithub,
@@ -25,23 +25,40 @@ function NavigationBar() {
           href="https://www.linkedin.com/in/davidasbill/"
           target="_blank"
           rel="noreferrer"
+          className="linkhover"
         >
           <GrLinkedin size={30} className="ms-2 ms-lg-5 me-3 me-lg-5" />
         </a>
-        <a href="https://github.com/asbillt" target="_blank" rel="noreferrer">
+        <a
+          href="https://github.com/asbillt"
+          target="_blank"
+          rel="noreferrer"
+          className="linkhover"
+        >
           <GrGithub size={30} className="me-3 me-lg-5" />
         </a>
         <a
           href="https://stackoverflow.com/users/16709095/david-asbill"
           target="_blank"
           rel="noreferrer"
+          className="linkhover"
         >
           <GrStackOverflow size={30} className="me-3 me-lg-5" />
         </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="linkhover"
+        >
           <GrYoutube size={30} className="me-3 me-lg-5" />
         </a>
-        <a href="https://twitter.com/asbillt1" target="_blank" rel="noreferrer">
+        <a
+          href="https://twitter.com/asbillt1"
+          target="_blank"
+          rel="noreferrer"
+          className="linkhover"
+        >
           <GrTwitter size={30} className="me-lg-5" />
         </a>
       </div>
@@ -51,24 +68,24 @@ function NavigationBar() {
       ></NavbarToggle>
       <NavbarCollapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="px-md-5 fs-5">
-          <Link
+          <NavLink
             to="/"
-            className="px-md-5 py-md-1 py-1 pt-4 text-decoration-none"
+            className="linkhover px-md-5 py-md-1 py-1 pt-4 text-decoration-none"
           >
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/about"
-            className="px-md-5 py-md-1 py-1 text-decoration-none"
+            className="linkhover px-md-5 py-md-1 py-1 text-decoration-none"
           >
             About
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/projects"
-            className="px-md-5 py-md-1 py-1 text-decoration-none"
+            className="linkhover px-md-5 py-md-1 py-1 text-decoration-none"
           >
             Projects
-          </Link>
+          </NavLink>
         </Nav>
       </NavbarCollapse>
     </Navbar>

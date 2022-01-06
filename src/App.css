@@ -1,1 +1,13 @@
+/* Navigation Styles */
 
+.active {
+  color: #ff9800;
+}
+
+.linkcolor {
+  color: #0004ff;
+}
+
+.linkhover:hover {
+  color: #ff9800;
+}
