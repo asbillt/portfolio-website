@@ -23,7 +23,12 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 250 }}
           >
-            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+            <Col
+              xs={12}
+              lg={6}
+              xxl={4}
+              className="backgroundColorBlog backgroundBorder p-3"
+            >
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
@@ -70,7 +75,12 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 500 }}
           >
-            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+            <Col
+              xs={12}
+              lg={6}
+              xxl={4}
+              className="backgroundColorPortfolio backgroundBorder p-3"
+            >
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
@@ -118,7 +128,12 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 750 }}
           >
-            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+            <Col
+              xs={12}
+              lg={6}
+              xxl={4}
+              className="backgroundColorAsbillt backgroundBorder p-3"
+            >
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
@@ -165,7 +180,12 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1000 }}
           >
-            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+            <Col
+              xs={12}
+              lg={6}
+              xxl={4}
+              className="backgroundColorTea backgroundBorder p-3"
+            >
               <div className="d-flex flex-column">
                 <Col>
                   <h4>
@@ -212,7 +232,12 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1250 }}
           >
-            <Col xs={12} lg={6} xxl={4} className="bg-black bg-opacity-25 p-3">
+            <Col
+              xs={12}
+              lg={6}
+              xxl={4}
+              className="backgroundColorFlipper backgroundBorder p-3"
+            >
               <div className="d-flex flex-column">
                 <Col>
                   <h4>

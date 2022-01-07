@@ -1,6 +1,9 @@
 /* Home Component Styles*/
 
 /* Navigation Styles */
+.link {
+  text-decoration: none;
+}
 
 .active {
   color: #ffc107;
@@ -12,4 +15,29 @@
 
 .linkhover:hover {
   color: #ffc107;
+}
+
+/* Projects Component Styles */
+.backgroundBorder {
+  border-radius: 15px;
+}
+
+.backgroundColorBlog {
+  background-color: rgba(41, 93, 214, 0.5);
+}
+
+.backgroundColorPortfolio {
+  background-color: rgba(68, 171, 240, 0.5);
+}
+
+.backgroundColorAsbillt {
+  background-color: rgba(68, 234, 240, 0.5);
+}
+
+.backgroundColorTea {
+  background-color: rgba(68, 240, 183, 0.5);
+}
+
+.backgroundColorFlipper {
+  background-color: rgba(68, 240, 105, 0.5);
 }
