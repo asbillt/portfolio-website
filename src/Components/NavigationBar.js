@@ -70,19 +70,19 @@ function NavigationBar() {
         <Nav className="px-md-5 fs-5">
           <NavLink
             to="/"
-            className="linkhover fw-bold px-md-5 py-md-1 py-1 pt-4 text-decoration-none"
+            className="linkhover link fw-bold px-md-5 py-md-1 py-1 pt-4"
           >
             Home
           </NavLink>
           <NavLink
             to="/about"
-            className="linkhover fw-bold px-md-5 py-md-1 py-1 text-decoration-none"
+            className="linkhover link fw-bold px-md-5 py-md-1 py-1"
           >
             About
           </NavLink>
           <NavLink
             to="/projects"
-            className="linkhover fw-bold px-md-5 py-md-1 py-1 text-decoration-none"
+            className="linkhover link fw-bold px-md-5 py-md-1 py-1"
           >
             Projects
           </NavLink>
