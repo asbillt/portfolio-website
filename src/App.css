@@ -41,3 +41,7 @@
 .backgroundColorFlipper {
   background-color: rgba(68, 240, 105, 0.5);
 }
+
+.height {
+  height: 100%;
+}

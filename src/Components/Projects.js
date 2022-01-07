@@ -10,12 +10,12 @@ function Projects() {
     <div>
       <NavigationBar />
       <Container className="vh-100 text-white" style={{ paddingTop: "14vh" }}>
-        <Row className="">
+        <Row className="pb-4">
           <Fade in={true} direction="right" easing="ease-out" timeout={500}>
             <h1 className="text-center">Some apps I've built:</h1>
           </Fade>
         </Row>
-        <Row className="d-flex p-4 g-4">
+        <Row className="d-flex g-4">
           <Fade
             in={true}
             direction="right"
@@ -23,13 +23,8 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 250 }}
           >
-            <Col
-              xs={12}
-              lg={6}
-              xxl={4}
-              className="backgroundColorBlog backgroundBorder p-3"
-            >
-              <div className="d-flex flex-column">
+            <Col xs={12} lg={6} xxl={4}>
+              <div className="height backgroundColorBlog backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
@@ -75,13 +70,8 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 500 }}
           >
-            <Col
-              xs={12}
-              lg={6}
-              xxl={4}
-              className="backgroundColorPortfolio backgroundBorder p-3"
-            >
-              <div className="d-flex flex-column">
+            <Col xs={12} lg={6} xxl={4}>
+              <div className="height backgroundColorPortfolio backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
@@ -128,13 +118,8 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 750 }}
           >
-            <Col
-              xs={12}
-              lg={6}
-              xxl={4}
-              className="backgroundColorAsbillt backgroundBorder p-3"
-            >
-              <div className="d-flex flex-column">
+            <Col xs={12} lg={6} xxl={4}>
+              <div className="height backgroundColorAsbillt backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
@@ -180,13 +165,8 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1000 }}
           >
-            <Col
-              xs={12}
-              lg={6}
-              xxl={4}
-              className="backgroundColorTea backgroundBorder p-3"
-            >
-              <div className="d-flex flex-column">
+            <Col xs={12} lg={6} xxl={4}>
+              <div className="height backgroundColorTea backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
@@ -232,13 +212,8 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1250 }}
           >
-            <Col
-              xs={12}
-              lg={6}
-              xxl={4}
-              className="backgroundColorFlipper backgroundBorder p-3"
-            >
-              <div className="d-flex flex-column">
+            <Col xs={12} lg={6} xxl={4}>
+              <div className="height backgroundColorFlipper backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
                     Source Code:
