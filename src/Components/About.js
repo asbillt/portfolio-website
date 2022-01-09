@@ -17,6 +17,8 @@ import {
   SiBootstrap,
   SiGithub,
   SiTypescript,
+  SiMaterialdesign,
+  SiMaterialui,
 } from "react-icons/si";
 import { Fade } from "@mui/material";
 
@@ -24,7 +26,10 @@ function About() {
   return (
     <div>
       <NavigationBar />
-      <Container className="vh-100 d-flex text-white justify-content-center align-items-center flex-column bg-black bg-opacity-25">
+      <Container
+        className="vh-100 d-flex text-white justify-content-center align-items-center flex-column bg-black bg-opacity-25"
+        style={{ paddingTop: "10vh" }}
+      >
         <Row className="pb-5">
           <div className="d-flex justify-content-center">
             <Col className="col-sm-10 col-md-8 col-lg-6 col-xl-5 col-xxl-5">
@@ -38,14 +43,19 @@ function About() {
                 style={{ transitionDelay: "250ms" }}
               >
                 <p className="fs-5">
-                  Hello! My name is David and I enjoy creating apps that live on
-                  the internet. My interest in{" "}
+                  Hello! My name is <span className="text-warning">David</span>{" "}
+                  and I enjoy creating apps that live on the internet. I've been
+                  an engineer for <span className="text-warning">9 years</span>,
+                  the last <span className="text-warning">2 years</span> as a
+                  Software Engineer, mostly in{" "}
+                  <span className="text-warning">React</span>.
+                  <br />
+                  <br />
+                  My interest in{" "}
                   <span className="text-warning">web development</span> started
-                  in early 2020 when I built my first business website.
-                  <br />
-                  <br />
-                  Fast forward to today, and I've had the opportunity to work on
-                  numerous projects on{" "}
+                  in early 2020 when I built my first business website. Fast
+                  forward to today, and I've had the opportunity to work on
+                  numerous projects creating{" "}
                   <span className="text-warning">
                     Front End User Interfaces
                   </span>{" "}
@@ -64,7 +74,7 @@ function About() {
                 timeout={750}
                 style={{ transitionDelay: "500ms" }}
               >
-                <h1 className="pb-2 text-center">Languages and tools:</h1>
+                <h1 className="pb-2 text-center">Languages and Tools</h1>
               </Fade>
               <Fade
                 in={true}
@@ -73,7 +83,7 @@ function About() {
                 style={{ transitionDelay: "750ms" }}
               >
                 <p className="fs-5 text-center">
-                  Here are some of the technologies I am working with.
+                  Here are some of the technologies I am working with:
                 </p>
               </Fade>
             </Row>
@@ -111,6 +121,12 @@ function About() {
                 </Col>
                 <Col className="d-flex justify-content-center">
                   <ul>
+                    <li>
+                      Material Design <SiMaterialdesign />
+                    </li>
+                    <li>
+                      Material UI <SiMaterialui />
+                    </li>
                     <li>
                       Visual Studio <DiVisualstudio />
                     </li>
