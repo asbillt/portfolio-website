@@ -1,8 +1,12 @@
+// Import React library
 import React from "react";
+// Import the NavigationBar component
 import NavigationBar from "./NavigationBar";
+// Import React-Bootstrap layout components
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+// Import various software icons
 import {
   DiHtml5,
   DiCss3,
@@ -20,13 +24,14 @@ import {
   SiMaterialdesign,
   SiMaterialui,
 } from "react-icons/si";
+// Import Fade transition from Material UI
 import { Fade } from "@mui/material";
 
 function About() {
   return (
     <div>
       <NavigationBar />
-      <Container style={{ paddingTop: "10vh" }}>
+      <Container>
         <Row className="g-4">
           <Col xs={12} lg={6} className="text-white">
             <div className="d-flex justify-content-center">
@@ -52,9 +57,11 @@ function About() {
                   <br />
                   <br />
                   My interest in{" "}
-                  <span className="text-warning">web development</span> started
-                  in early 2020 when I built my first business website. Fast
-                  forward to today, and I've had the opportunity to work on
+                  <span className="text-warning">
+                    software development
+                  </span>{" "}
+                  started in early 2020 when I built my first business website.
+                  Fast forward to today, and I've had the opportunity to work on
                   numerous projects creating{" "}
                   <span className="text-warning">
                     Front End User Interfaces
@@ -201,7 +208,7 @@ function About() {
                       className="languages"
                     >
                       <div className="text-center pb-4 languages">
-                        <h6>Material Ui</h6>
+                        <h6>Material UI</h6>
                         <SiMaterialui
                           className="fs-1"
                           style={{ color: "#2196f3" }}

@@ -9,7 +9,7 @@ function Projects() {
   return (
     <div>
       <NavigationBar />
-      <Container className="vh-100 text-white" style={{ paddingTop: "14vh" }}>
+      <Container className="vh-100 text-white">
         <Row className="pb-4">
           <Fade in={true} direction="right" easing="ease-out" timeout={500}>
             <h1 className="text-center">Some apps I've built:</h1>
