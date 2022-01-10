@@ -1,4 +1,14 @@
-/* Home Component Styles*/
+/* About Component Styles*/
+
+.languages {
+  text-decoration: none;
+  color: white;
+}
+
+.languages:hover {
+  color: #ffc107;
+  transform: scale(1.2);
+}
 
 /* Navigation Styles */
 .link {
