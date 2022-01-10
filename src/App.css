@@ -10,6 +10,24 @@
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 900px) {
+  .container {
+    padding-top: 15vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding-top: 15vh;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    padding-top: 12vh;
+  }
+}
+
 /* Navigation Styles */
 .link {
   text-decoration: none;
