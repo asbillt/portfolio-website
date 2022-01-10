@@ -46,7 +46,7 @@ function NavigationBar() {
           <GrStackOverflow size={30} className="me-3 me-lg-5" />
         </a>
         <a
-          href="https://www.youtube.com/"
+          href="https://www.youtube.com/channel/UCn7kk_-u4xdG_B2SIoqvtKg/featured"
           target="_blank"
           rel="noreferrer"
           className="linkhover"
