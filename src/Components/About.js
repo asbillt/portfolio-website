@@ -1,12 +1,13 @@
-// Import React library
+// Import Statements:
+// Import React library.
 import React from "react";
-// Import the NavigationBar component
+// Import the NavigationBar component.
 import NavigationBar from "./NavigationBar";
-// Import React-Bootstrap layout components
+// Import React-Bootstrap layout components.
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// Import various software icons
+// Import various software icons.
 import {
   DiHtml5,
   DiCss3,
@@ -32,17 +33,28 @@ function About() {
     <div>
       <NavigationBar />
       <Container>
-        <Row className="g-4">
-          <Col xs={12} lg={6} className="text-white">
+        <Row
+          // The row is a wrapper for 2 columns.
+          className="g-4"
+        >
+          <Col
+            // "left/top column"
+            // Col spans 12 columns at xs through md breakpoints.
+            // Col spans 6 columns from lg and above breakpoints.
+            // Each div has a fade transition, one for the header
+            // and one for the paragraph.
+            xs={12}
+            lg={6}
+            className="text-white"
+          >
             <div className="d-flex justify-content-center">
-              <Fade in={true} direction="right" easing="ease-out" timeout={300}>
+              <Fade in={true} easing="ease-out" timeout={300}>
                 <h1>About Me</h1>
               </Fade>
             </div>
             <div className="pt-3 pt-lg-5">
               <Fade
                 in={true}
-                direction="right"
                 easing="ease-out"
                 timeout={300}
                 style={{ transitionDelay: 300 }}
@@ -71,11 +83,21 @@ function About() {
               </Fade>
             </div>
           </Col>
-          <Col xs={12} lg={6}>
+          <Col
+            // "right/bottom column"
+            // Col spans 12 columns at xs through md breakpoints.
+            // Col spans 6 columns at lg and above breakpoints.
+            // The header has a fade transition.
+            // The 3 column layout has a fade transition.
+            // Each column of the 3 column layout is made up of
+            // smaller child columns.
+            // Each child column contains: (1)a link and (2)a div with a title and icon.
+            xs={12}
+            lg={6}
+          >
             <div className="d-flex justify-content-center text-white">
               <Fade
                 in={true}
-                direction="right"
                 easing="ease-out"
                 timeout={300}
                 style={{ transitionDelay: 600 }}
@@ -85,7 +107,6 @@ function About() {
             </div>
             <Fade
               in={true}
-              direction="right"
               easing="ease-out"
               timeout={300}
               style={{ transitionDelay: 900 }}
@@ -299,4 +320,5 @@ function About() {
   );
 }
 
+// Export the default about component.
 export default About;

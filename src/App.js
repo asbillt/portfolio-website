@@ -1,21 +1,24 @@
+// Import statements for App.css local styles,
+// Home, About and Projects components,
+// and the Router, Routes and Route components for navigation.
 import "./App.css";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
-import Social from "./Components/Social";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+// Return a set of Routes for app url navigation/component rendering.
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
-        <Route exact path="/projects" element={<Projects />} />
-        <Route exact path="/social" element={<Social />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );
 }
 
+// Export default App component
 export default App;

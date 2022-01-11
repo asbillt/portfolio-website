@@ -1,29 +1,49 @@
+// Import statements:
+// Import react library.
 import React from "react";
+// Import NavigationBar component.
 import NavigationBar from "./NavigationBar";
+// Import React-Bootstrap layout components.
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+// Import Material UI fade transition.
 import { Fade } from "@mui/material";
 
 function Projects() {
   return (
     <div>
       <NavigationBar />
-      <Container className="vh-100 text-white">
-        <Row className="pb-4">
-          <Fade in={true} direction="right" easing="ease-out" timeout={500}>
+      <Container
+        // Container spans 100% of vertical height of viewport.
+        className="vh-100 text-white"
+      >
+        <Row
+          // Row container header with fade transition
+          className="pb-4"
+        >
+          <Fade in={true} easing="ease-out" timeout={500}>
             <h1 className="text-center">Some apps I've built:</h1>
           </Fade>
         </Row>
-        <Row className="d-flex g-4">
+        <Row
+          // Row wrapping columns, each column with a fade transition.
+          className="d-flex g-4"
+        >
           <Fade
             in={true}
-            direction="right"
             easing="ease-out"
             timeout={500}
             style={{ transitionDelay: 250 }}
           >
-            <Col xs={12} lg={6} xxl={4}>
+            <Col
+              // Col spans 12 columns from xs through md breakpoints.
+              // Col spans 6 columns from lg through xl breakpoints.
+              // Col spans 4 columns xxl and above breakpoint.
+              xs={12}
+              lg={6}
+              xxl={4}
+            >
               <div className="height backgroundColorBlog backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
@@ -70,7 +90,14 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 500 }}
           >
-            <Col xs={12} lg={6} xxl={4}>
+            <Col
+              // Col spans 12 columns from xs through md breakpoints.
+              // Col spans 6 columns from lg through xl breakpoints.
+              // Col spans 4 columns xxl and above breakpoint.
+              xs={12}
+              lg={6}
+              xxl={4}
+            >
               <div className="height backgroundColorPortfolio backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
@@ -118,7 +145,14 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 750 }}
           >
-            <Col xs={12} lg={6} xxl={4}>
+            <Col
+              // Col spans 12 columns from xs through md breakpoints.
+              // Col spans 6 columns from lg through xl breakpoints.
+              // Col spans 4 columns xxl and above breakpoint.
+              xs={12}
+              lg={6}
+              xxl={4}
+            >
               <div className="height backgroundColorAsbillt backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
@@ -129,7 +163,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="text-decoration-none text-warning ps-2"
                     >
-                      Asbillt Website
+                      Asbillt Website V1
                     </a>
                   </h4>
                   <h4>
@@ -140,7 +174,7 @@ function Projects() {
                       rel="noopener noreferrer"
                       className="text-decoration-none text-warning ps-2"
                     >
-                      Asbillt Website
+                      Asbillt Website V1
                     </a>
                   </h4>
                   <div className="text-center p-4">
@@ -165,7 +199,14 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1000 }}
           >
-            <Col xs={12} lg={6} xxl={4}>
+            <Col
+              // Col spans 12 columns from xs through md breakpoints.
+              // Col spans 6 columns from lg through xl breakpoints.
+              // Col spans 4 columns xxl and above breakpoint.
+              xs={12}
+              lg={6}
+              xxl={4}
+            >
               <div className="height backgroundColorTea backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>
@@ -212,7 +253,14 @@ function Projects() {
             timeout={500}
             style={{ transitionDelay: 1250 }}
           >
-            <Col xs={12} lg={6} xxl={4}>
+            <Col
+              // Col spans 12 columns from xs through md breakpoints.
+              // Col spans 6 columns from lg through xl breakpoints.
+              // Col spans 4 columns xxl and above breakpoint.
+              xs={12}
+              lg={6}
+              xxl={4}
+            >
               <div className="height backgroundColorFlipper backgroundBorder p-3 d-flex flex-column">
                 <Col>
                   <h4>

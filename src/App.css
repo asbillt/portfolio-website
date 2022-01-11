@@ -1,5 +1,4 @@
-/* About Component Styles*/
-
+/*-------------About Component Styles-------------*/
 .languages {
   text-decoration: none;
   color: white;
@@ -28,24 +27,7 @@
   }
 }
 
-/* Navigation Styles */
-.link {
-  text-decoration: none;
-}
-
-.active {
-  color: #ffc107;
-}
-
-.linkcolor {
-  color: #0004ff;
-}
-
-.linkhover:hover {
-  color: #ffc107;
-}
-
-/* Projects Component Styles */
+/*-------------Projects Component Styles-------------*/
 .backgroundBorder {
   border-radius: 15px;
 }
@@ -72,4 +54,21 @@
 
 .height {
   height: 100%;
+}
+
+/*-------------NavigationBar Component Styles-------------*/
+.link {
+  text-decoration: none;
+}
+
+.active {
+  color: #ffc107;
+}
+
+.linkcolor {
+  color: #0004ff;
+}
+
+.linkhover:hover {
+  color: #ffc107;
 }

@@ -1,3 +1,5 @@
+// Import React library, ReactDom for render method,
+// App component, index.css global styles, and Bootstrap.
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
@@ -5,6 +7,8 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import reportWebVitals from "./reportWebVitals";
 
+// Use ReactDom's render method to render the App component
+// in the root element.
 ReactDOM.render(
   <React.StrictMode>
     <App />

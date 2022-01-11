@@ -1,13 +1,19 @@
+// Import statements:
+// React library, React hooks
 import React from "react";
 import { useState, useEffect } from "react";
+// Import Material UI layout tools and fade transition
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
+import { Fade } from "@mui/material";
+// Import React-Bootstrap layout tools and Button component
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+// Import useNavigate hook for navigation for button's onclick event
 import { useNavigate } from "react-router-dom";
+// Import arrow icon from react-icons library
 import { CgArrowRight } from "react-icons/cg";
-import { Fade } from "@mui/material";
 
 function Home() {
   const navigate = useNavigate();
@@ -17,10 +23,19 @@ function Home() {
   }, []);
 
   return (
+    // Create a material ui grid.
     <Grid>
-      <Container className="vh-100 d-flex justify-content-center align-items-center">
+      <Container
+        // Container spans 100% of vertical height of viewport,
+        // flex display, justify content in middle, align items in middle.
+        className="vh-100 d-flex justify-content-center align-items-center"
+      >
         <Row>
-          <h1 className="text-center text-white display-5 fw-normal px-0 pt-3 my-0">
+          <h1
+            // Header with 1 sec fade transition per character.
+            // Each subsequent character has a 1 sec delay.
+            className="text-center text-white display-5 fw-normal px-0 pt-3 my-0"
+          >
             <div>
               <Fade in={anim} easing="linear" timeout={100}>
                 <span>H</span>
@@ -424,7 +439,11 @@ function Home() {
               </Fade>
             </div>
           </h1>
-          <Col className="d-flex justify-content-center py-4">
+          <Col
+            // Col component consisting of a button that navigates onclick
+            // to "/about" url in react app and has a fade in transition.
+            className="d-flex justify-content-center py-4"
+          >
             <Fade
               in={anim}
               easing="linear"
@@ -447,4 +466,5 @@ function Home() {
   );
 }
 
+// Export the default home component.
 export default Home;
