@@ -31,6 +31,7 @@ A React.js Web Application I built to communicate the tech stack that I use and 
 │   │   ├── About.js
 │   │   ├── Home.js
 │   │   ├── NavigationBar.js
+|   |   ├── NotFound.js
 │   │   └── Projects.js
 │   ├── App.css
 │   ├── App.js
