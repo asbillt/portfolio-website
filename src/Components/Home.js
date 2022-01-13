@@ -453,7 +453,7 @@ function Home() {
               <Button
                 variant="outline-warning"
                 className="border-1 d-flex fs-5"
-                onClick={() => navigate("/about")}
+                onClick={() => navigate("/portfolio-website/about")}
               >
                 <span className="px-2 py-1">Learn About Me</span>
                 <CgArrowRight className="align-self-center" />

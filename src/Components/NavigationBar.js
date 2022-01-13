@@ -69,19 +69,19 @@ function NavigationBar() {
       <NavbarCollapse id="basic-navbar-nav" className="justify-content-end">
         <Nav className="px-md-5 fs-5">
           <NavLink
-            to="/"
+            to="/portfolio-website/"
             className="linkhover link fw-bold px-md-5 py-md-1 py-1 pt-4"
           >
             Home
           </NavLink>
           <NavLink
-            to="/about"
+            to="/portfolio-website/about"
             className="linkhover link fw-bold px-md-5 py-md-1 py-1"
           >
             About
           </NavLink>
           <NavLink
-            to="/projects"
+            to="/portfolio-website/projects"
             className="linkhover link fw-bold px-md-5 py-md-1 py-1"
           >
             Projects

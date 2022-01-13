@@ -12,7 +12,7 @@ function NotFound() {
         Go Back To{" "}
         <Link
           // Link routes to the home page.
-          to="/"
+          to="/portfolio-website"
           className="link linkhover"
         >
           Home
