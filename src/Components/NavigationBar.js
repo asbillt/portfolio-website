@@ -19,7 +19,7 @@ import {
 // hidden by a parent breakpoint of 768px.
 function NavigationBar() {
   return (
-    <Navbar expand="md" className="px-5 py-3 bg-light" fixed="top">
+    <Navbar expand="md" className="px-1 px-sm-5 py-3 bg-light" fixed="top">
       <div className="d-flex justify-content-center ">
         <a
           href="https://www.linkedin.com/in/davidasbill/"
