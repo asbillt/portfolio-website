@@ -32,19 +32,27 @@
   border-radius: 15px;
 }
 
-.backgroundColorBlog {
-  background-color: rgba(41, 93, 214, 0.5);
+.backgroundColorDwellings {
+  background-color: rgba(136, 41, 214, 0.5);
+}
+
+.backgroundColorEcosystems {
+  background-color: rgba(73, 41, 214, 0.5);
 }
 
 .backgroundColorPortfolio {
+  background-color: rgba(41, 93, 214, 0.5);
+}
+
+.backgroundColorAsbillt2 {
   background-color: rgba(68, 171, 240, 0.5);
 }
 
-.backgroundColorAsbillt {
+.backgroundColorAsbillt1 {
   background-color: rgba(68, 234, 240, 0.5);
 }
 
-.backgroundColorTea {
+.backgroundColorBlog {
   background-color: rgba(68, 240, 183, 0.5);
 }
 
